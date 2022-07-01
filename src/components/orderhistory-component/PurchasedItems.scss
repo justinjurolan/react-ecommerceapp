@@ -1,0 +1,45 @@
+@import '../variable';
+
+.PurchasedItems-container{
+    text-align: center;
+
+    &__separator{
+        width: 70%;
+        height: 5px;
+        background-color: black;
+        margin: 0 auto;
+    }
+    &__title{
+        
+
+        & h2{
+            font-family: $primary-font;
+            font-weight: 400;
+            font-size: 2.5rem;
+        }
+    }
+
+    & table{
+        margin: 20px auto;
+        width: 70%;
+
+        & .table-image{
+            width: 80px;
+        }
+
+        & thead{
+            background-color: rgba(51, 51, 51, 0.11);
+            text-transform: uppercase;
+          
+        }
+
+        & th{
+            padding:5px;
+            
+        }
+
+        & td{
+            padding: 5px;
+        }
+    }
+}

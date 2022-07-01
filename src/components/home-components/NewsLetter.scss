@@ -1,0 +1,61 @@
+@import '../variable';
+
+.NewsLetter-container{
+    
+    background: linear-gradient( rgba(0,0,0,0.7), rgba(0,0,0,0.8) ), url('http://pm1.narvii.com/7034/cc773ffdcc1a5d01f1eb3e34a90b89284a7fc4fcr1-2048-1434v2_uhq.jpg');
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    height: 58vh;
+    @include flex(column, nowrap,center ,center);
+    gap: 10px;
+    padding-top: 40px;
+    color: white;
+
+    &__content{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        line-height: 60px;
+        margin-top: -70px;
+        text-align: center;
+
+        & h2{
+            font-size: clamp(1.8rem, 2vw + 0.5vw, 3rem);
+        }
+        & span{
+         color: pink;
+        }
+    }
+
+    &__email{
+        & input{
+            display: block;
+
+            width: calc(max(35vw, 300px));
+            height: 4vh;
+            margin: 40px 0 10px 0px;
+            text-align: center;
+            border: none;
+        }
+
+
+
+        & button{
+            
+            width: calc(max(35vw, 300px));
+            height: 4vh;
+            background-color: black;
+            border: none;
+            font-weight: bolder;
+            color: white;
+            
+           
+        }
+
+        & button:hover{
+            background-color: pink;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+    }
+
+}

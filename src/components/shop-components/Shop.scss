@@ -1,0 +1,31 @@
+@import '../variable';
+
+.Shop-container{
+    @include flex(row, wrap, center,center);
+    width: 80%;
+    margin: 50px auto;
+
+
+
+    &__sidebar{
+        flex-basis: 15%;
+        align-self: flex-start;
+        padding-left: 40px;
+        margin-bottom: 30px;
+    }
+
+    &__content{
+        @include flex(row,wrap,center,center);
+        width: 80%;
+        margin-top: -20px;
+
+        & button{
+            cursor: pointer;
+        }
+
+    }
+}
+
+@media only screen and (max-width){
+
+}

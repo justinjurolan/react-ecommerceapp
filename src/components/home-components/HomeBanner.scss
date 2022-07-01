@@ -1,0 +1,150 @@
+@import '../variable.scss';
+
+.banner-discount {
+    background-color: #1d1d1d;
+    color: white;
+    padding: 3px 10px 3px 10px;
+    text-align: center;
+
+    &__red {
+        color: pink;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        line-height: 24px;
+    }
+}
+
+.banner {
+    background: url("../../Images/assets/Blackpink.jpg");
+    background-color: #e2e2e2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    height: 100%;
+}
+
+.banner-container {
+    @include flex(row, wrap, center, center);
+    margin-top: 70px;
+    gap: 200px;
+
+    &__empty {
+        width: 400px;
+    }
+
+    &__partition {
+        @include flex(column, wrap, center, flex-start);
+        width: calc(max(35vw, 800px));
+        margin-bottom: 70px;
+
+        &__experience {
+            font-family: Sans-serif;
+            font-size: 15px;
+            font-weight: bolder;
+            letter-spacing: 5px;
+            margin-top: 150px;
+        }
+
+        &__sale {
+            font-family: "Aguafina Script", cursive;
+            font-size: 65px;
+            text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            margin-top: 50px;
+            font-weight: 600;
+        }
+
+        &__percent h2 {
+            font-weight: bolder;
+            text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            margin-top: 50px;
+            font-size: clamp(7rem, 10vw, 12rem);
+            
+            & span{
+                color: pink;
+            }
+        }
+
+      
+
+        &__bottom {
+            @include flex(row, wrap, center, center);
+            margin-top: 90px;
+            gap: 280px;
+
+            &__starting {
+                font-size: 25px;
+                font-weight: bold;
+            }
+
+            &__button-text {
+                width: 150px;
+                height: 50px;
+                font-size: 16px;
+                font-weight: bold;
+                color: white;
+                background-color: black;
+                font-family: "Poppins", Sans-serif;
+                cursor: pointer;
+            }
+            &__button-text:hover{
+                background-color: pink;
+                color: white;
+                transition: 0.5s;
+                border:none;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    .banner {
+        background: none;
+    }
+
+    .banner-container {
+        padding: 30px;
+
+        &__empty {
+            display: none;
+        }
+
+        &__partition {
+            align-items: center;
+            padding: 30px;
+
+            &__bottom {
+                text-align: center;
+                gap: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 595px) {
+
+    .banner-container__empty {
+        display: none;
+    }
+
+    .banner-container__partition {
+        align-items: center;
+        width: 300px;
+
+        &__experience {
+            text-align: center;
+            margin: 0;
+        }
+
+        &__sale {
+            font-size: 60px;
+            text-align: center;
+        }
+
+        &__percent h2 {
+            font-size: 45px;
+
+        }
+    }
+}

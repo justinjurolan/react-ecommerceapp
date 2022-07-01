@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+}
+
+.Task{
+  width: 520px;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #9b5454;
+  color: white;
+
+}

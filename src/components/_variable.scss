@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+$primary-color: #272727;
+$header-nav-color: #333;
+
+$primary-font: 'Poppins',sans-serifoto;
+
+
+$primary-color: #272727;
+$header-nav-color: #333;
+
+$primary-font: 'Poppins',sans-serifoto;
+
+@mixin transition-ease{
+    transition: all 0.8s ease-in-out;
+}
+
+@mixin flex($direction, $wrap, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+  }

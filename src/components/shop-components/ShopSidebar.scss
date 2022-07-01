@@ -1,0 +1,59 @@
+@import '../variable';
+
+.ShopSidebar-container{
+    font-family: $primary-font;
+    margin-inline: 10px;
+    @include flex(column, nowrap,center,flex-end);
+    gap: 20px;
+
+    & h2{
+
+        font-weight: normal;
+        
+    }
+
+    & ul{
+        margin-top: 20px;
+    }
+
+    & li{
+        margin: 10px;
+        list-style:none;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    & a{
+        text-decoration: none;
+        color: $primary-color;
+    }
+    
+    & a:hover{
+        color: pink;
+    }
+
+    & input{
+        width: 200px;
+        height: 25px;
+        margin-top: 20px;
+    }
+
+    & button{
+        width: 100px;
+        height: 25px;
+        margin-top: 10px;
+        background-color: $primary-color;
+        color: white;
+    }
+
+}
+@media screen and (max-width:1277px) {
+    .ShopSidebar-container{
+        @include flex(row,wrap,center,center);
+        width: 100vw;
+        margin:0 auto;
+
+        & ul{
+            @include flex(row,wrap,center,center);
+        }
+    }
+}

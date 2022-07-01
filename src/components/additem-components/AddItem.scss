@@ -1,0 +1,78 @@
+@import '../variable';
+
+.BlackPink{
+    background: url('https://wallpaperaccess.com/full/1099649.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding-top: 100px;
+}
+
+.AddItem-container{
+    width: calc(max(30vw, 300px));
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.493);
+    padding: 60px 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px  pink;
+    
+    & h2{
+        font-size: clamp(1rem, 1vw +0.4vw,3rem);
+        text-align: center;
+        color: white;
+        font-family: $primary-font;
+        font-weight: 400;
+
+        & span{
+            color: pink;
+        }
+
+    }
+
+    &__form{
+        @include flex(column,wrap,center,center);
+        gap: 10px;
+        padding: 30px 0;
+        width: 100%;
+        line-height: 50px;
+       
+
+        & label{
+            color:white;
+            text-align: left;
+            font-size: 1.7rem;
+
+        }
+
+        & input{
+            width: calc(max(20vw, 200px));
+            height: 25px;
+        }
+
+        & button{
+            width: 150px;
+            height: 30px;
+            margin-top: 20px;
+            background-color: pink;
+            border: none;
+            cursor: pointer;
+        }
+
+        & select{
+            width: 130px;
+            text-align: center;
+            height: 25px;
+        }
+
+        .Additem-link{
+            text-decoration: none ;
+        }   
+        .Additem-link:visited{
+            color: white;
+        }
+        
+       
+
+    }
+}

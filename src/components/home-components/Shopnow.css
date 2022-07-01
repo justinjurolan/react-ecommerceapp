@@ -1,0 +1,191 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.shop-now__womens {
+  background-image: url(https://elementorecommercetutorial.com/wp-content/uploads/2020/08/bg37.jpg);
+  background-color: #f4f4f4;
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  text-align: right;
+  padding: 10% 5% 10% 5%;
+}
+.shop-now__womens h3 {
+  font-size: 41px;
+  font-weight: bold;
+  line-height: 1.2em;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+
+.shop-now__womens p {
+  color: #f4f4f4;
+  font-size: 1.125rem;
+  margin: 15px 0;
+  font-weight: 700;
+}
+
+.shop-now__womens a {
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #ffffff;
+  color: #000;
+  text-decoration: none;
+  box-shadow: none;
+  line-height: 1;
+  width: auto;
+  padding: 15px 30px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.shop-now__womens a:hover {
+  background-color: pink;
+  color: black;
+}
+
+.shop-now__newarrivals {
+  background-color: #ffffff;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(167, 167, 167, 0.5)
+    ),
+    url(https://elementorecommercetutorial.com/wp-content/uploads/2020/08/bg_slide4.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 10% 5% 10% 5%;
+}
+
+.shop-now__newarrivals h3 {
+  font-size: 41px;
+  font-weight: bold;
+  line-height: 1.2em;
+  letter-spacing: -0.5px;
+  color: #000;
+}
+
+.shop-now__newarrivals p {
+  color: #000;
+  font-size: 1.125rem;
+  margin: 15px 0;
+  font-weight: 700;
+}
+
+.shop-now__newarrivals a {
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: none;
+  line-height: 1;
+  width: auto;
+  padding: 15px 30px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.shop-now__newarrivals a:hover {
+  background-color: pink;
+  color: #000;
+}
+
+.shop-now__mensproduct {
+  background-color: #f4f4f4;
+  background-image: url(https://elementorecommercetutorial.com/wp-content/uploads/2020/08/bg31110.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding: 10% 5% 10% 5%;
+}
+
+.shop-now__mensproduct h3 {
+  font-size: 41px;
+  font-weight: bold;
+  line-height: 1.2em;
+  letter-spacing: -0.5px;
+  color: #fff;
+}
+
+.shop-now__mensproduct p {
+  color: #fff;
+  font-size: 1.125rem;
+  margin: 15px 0;
+  font-weight: 700;
+}
+
+.shop-now__mensproduct a {
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #fff;
+  color: #222;
+  text-decoration: none;
+  box-shadow: none;
+  line-height: 1;
+  width: auto;
+  padding: 15px 30px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.shop-now__mensproduct a:hover {
+  background-color: pink;
+  color: black;
+}
+
+@media screen and (min-width: 750px) {
+  .shop-now__row {
+    display: flex;
+  }
+}
+/* Image Box */
+.image-box {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  margin: 70px 0px;
+
+}
+
+.image-box-freeshipping,
+.image-box-quickpayment,
+.image-box-gift-certificate,
+.image-box-support {
+  display: flex;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border-left {
+  border-left: 1.5px solid;
+}
+
+.img-content {
+  line-height: 1.7rem;
+  margin: 20px;
+}
+
+.img-size {
+  width: 50px;
+  margin: 15px;
+}
+
+@media screen and (max-width: 750px) {
+  .image-box {
+    display: none;
+  }
+}

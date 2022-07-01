@@ -1,0 +1,408 @@
+@import '../variable';
+
+.AboutSection-container{
+
+    &__title{
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.479);
+        background: url("https://elementorecommercetutorial.com/wp-content/uploads/2020/08/bg31110.jpg");
+        background-size: cover;
+        background-position:center;
+        background-repeat: no-repeat;
+        padding: 50px;
+        text-transform: capitalize;
+
+        & h1{
+            margin: 35px 0px;
+            color: #FFFFFF;
+            font-family: "Poppins", Sans-serif;
+            font-size: 61px;
+            font-weight: bold;
+            letter-spacing: 1.9px;
+            text-align: center;
+        }
+    }
+
+    &__about{
+        @include flex(row, wrap,center,center);
+        gap: 10px;
+        margin-block: 10rem;
+
+        & .aboutcontainer-img{
+            text-align: center;
+
+            & img{
+                width: 80%
+            }
+        }
+
+        & .aboutcontainer-content{
+            @include flex(column,nowrap,center,center);
+            width: calc(max(35vw,600px));
+            align-self: flex-start;
+            gap: 50px;
+            font-family: $primary-font;
+
+            & h2{
+                font-size: clamp(1.7rem, 2vw + 0.5vw, 3rem);
+                font-weight: 400;
+                letter-spacing: 0px;
+                padding: 0;
+                margin: 0 20px;
+            }
+
+            & p{
+                margin: 0 20px;
+                text-align: justify;
+            }
+
+            & button{
+                width: 150px;
+                height: 50px;
+                color: white;
+                font-weight: bold;
+                background-color: $primary-color;
+                border: none;
+                padding: 15px;
+                margin: 0 20px;
+                cursor: pointer;
+            }
+            & button:hover{
+                transition: 0.5s;
+                background-color: pink;
+                color: black;
+            }
+        }
+    }
+    
+    &__crew{
+        @include flex(column,nowrap, flex-start,center);
+        background-color: black;
+        color: white;
+        gap: 30px;
+        font-family: $primary-font;
+        
+        & span{
+            color: pink;
+        }
+        & h4{
+            padding-top: 80px;
+        }
+        & h2{
+            font-size: clamp(1.8rem, 3vw + 0.5vw, 4rem);
+            
+        }
+        & p{
+            text-transform: uppercase;
+            margin: 0 30px;
+            text-align: center; 
+            font-size: clamp(1rem, 0.4vw, 2rem);
+            max-width: 47%;
+        }
+
+        
+    &-overlay{
+        @include flex(row,wrap,center,center);
+        width: 80%;
+        gap: 20px;
+        margin: 90px 0;
+
+        &__justin{
+            background: url('../../Images/assets/justinimg.jpg');
+            background-size:cover ;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            z-index: 1;
+            width: calc(max(5vw,260px));
+            height: calc(max(5vh,300px));
+            position: relative;
+            
+            & h3{
+                visibility: hidden;
+            }
+
+            &:hover{
+                height: 350px;
+                @include transition-ease;
+             
+
+                & div{
+                    position: absolute;
+                    background-color: rgba(0, 0, 0, 0.527);
+                    width: 100%;
+                    height: 100%;  
+    
+                    & h3{
+                        position: relative;
+                        visibility: visible;
+                        text-align: center;
+                        font-size: 30px;
+                        color:white;
+                        margin-top: 100px;
+                    }
+    
+                }
+                
+    
+            }
+
+            
+           
+        }
+
+        &__laine{
+           background: url('../../Images/assets/laine.jpg');
+           background-size:cover ;
+           background-repeat: no-repeat;
+           background-position: 50%;
+           position: relative;
+           z-index: 1;
+           width: calc(max(7vw,270px));
+            height: calc(max(7vh,300px));
+
+           & h3{
+            visibility: hidden;
+            }
+
+        &:hover{
+            height: 350px;
+            @include transition-ease;
+         
+
+            & div{
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.527);
+                width: 100%;
+                height: 100%;  
+
+                & h3{
+                    position: relative;
+                    visibility: visible;
+                    text-align: center;
+                    font-size: 30px;
+                    color:white;
+                    margin-top: 100px;
+                }
+
+            }
+            
+
+        }
+
+            
+        }
+
+        &__jarren{
+            background: url('../../Images/assets/jarren1.jpg');
+            background-size:cover ;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            position: relative;
+            z-index: 1;
+            width: calc(max(7vw,270px));
+            height: calc(max(7vh,300px));
+            
+            & h3{
+                visibility: hidden;
+            }
+
+            &:hover{
+                height: 350px;
+                @include transition-ease;
+             
+
+                & div{
+                    position: absolute;
+                    background-color: rgba(0, 0, 0, 0.527);
+                    width: 100%;
+                    height: 100%;  
+    
+                    & h3{
+                        position: relative;
+                        visibility: visible;
+                        text-align: center;
+                        font-size: 30px;
+                        color:white;
+                        margin-top: 100px;
+                    }
+    
+                }
+                
+    
+            }
+        }
+
+        &__kate{
+            background: url('../../Images/assets/kate.jpg');
+            background-size:cover ;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            position: relative;
+            z-index: 1;
+            width: calc(max(7vw,270px));
+            height: calc(max(7vh,300px));
+
+            & h3{
+                visibility: hidden;
+            }
+
+            &:hover{
+                height: 350px;
+                @include transition-ease;
+             
+
+                & div{
+                    position: absolute;
+                    background-color: rgba(0, 0, 0, 0.527);
+                    width: 100%;
+                    height: 100%;  
+    
+                    & h3{
+                        position: relative;
+                        visibility: visible;
+                        text-align: center;
+                        font-size: 30px;
+                        color:white;
+                        margin-top: 100px;
+                    }
+    
+                }
+                
+    
+            }
+            
+        }
+
+        &__james{
+            background: url('../../Images/assets/james.PNG');
+            background-size:cover ;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            position: relative;
+            z-index: 1;
+            width: calc(max(7vw,270px));
+            height: calc(max(7vh,300px));
+
+            & h3{
+                visibility: hidden;
+            }
+
+            &:hover{
+                height: 350px;
+                @include transition-ease;
+             
+
+                & div{
+                    position: absolute;
+                    background-color: rgba(0, 0, 0, 0.527);
+                    width: 100%;
+                    height: 100%;  
+    
+                    & h3{
+                        position: relative;
+                        visibility: visible;
+                        text-align: center;
+                        font-size: 30px;
+                        color:white;
+                        margin-top: 100px;
+                    }
+    
+                }
+                
+    
+            }
+
+          
+            
+        }
+
+        &__cath{
+            background: url('../../Images/assets/CMLabro.jpeg');
+            background-size:cover ;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            position: relative;
+            z-index: 1;
+            width: calc(max(7vw,270px));
+            height: calc(max(7vh,300px));
+
+            & h3{
+                visibility: hidden;
+            }
+
+            &:hover{
+                height: 350px;
+                @include transition-ease;
+             
+
+                & div{
+                    position: absolute;
+                    background-color: rgba(0, 0, 0, 0.527);
+                    width: 100%;
+                    height: 100%;  
+    
+                    & h3{
+                        position: relative;
+                        visibility: visible;
+                        text-align: center;
+                        font-size: 30px;
+                        color:white;
+                        margin-top: 100px;
+                    }
+    
+                }
+                
+    
+            }
+            
+        }
+
+        &__mark{
+            background: url('../../Images/assets/mark.jpg');
+            background-size:cover ;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            position: relative;
+            z-index: 1;
+            width: calc(max(7vw,270px));
+            height: calc(max(7vh,300px));
+
+            & h3{
+                visibility: hidden;
+            }
+
+            &:hover{
+                height: 350px;
+                @include transition-ease;
+             
+
+                & div{
+                    position: absolute;
+                    background-color: rgba(0, 0, 0, 0.527);
+                    width: 100%;
+                    height: 100%;  
+    
+                    & h3{
+                        position: relative;
+                        visibility: visible;
+                        text-align: center;
+                        font-size: 30px;
+                        color:white;
+                        margin-top: 100px;
+                    }
+    
+                }
+                
+    
+            }
+            
+        }
+    }
+
+
+    }
+
+
+}
