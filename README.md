@@ -6,6 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Our third project in React JS. I collaborated with group of 5 people to build this fully functional e-commerce clothing shop. It is a project utilizing Advanced React Hooks and React Router Version 6. 
 
+## Live Demo
+See the live demo of the project [here](https://project5-react-ecommerce.herokuapp.com/).
+
 ## Installation
 
 ```
